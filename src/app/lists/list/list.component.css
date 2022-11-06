@@ -1,0 +1,16 @@
+div{
+    margin: 5px 0px;}
+.checked{
+    color: rgb(107, 163, 23);
+    font-size: 25px;
+}
+.fa-trash-o{
+    color: #fc2323;
+}
+.listtext{
+    font-size: 18px;
+    margin-left: 5px;
+}
+.textsize{
+    font-size: 25px;
+}

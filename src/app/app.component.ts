@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'task1';
+  todoListContent: {todoText: string, todoCheck: boolean}[] = [];
+
+  onAddList(inputData: {text: string, check: boolean}){
+    this.todoListContent.push({todoText: inputData.text, todoCheck: inputData.check});
+    console.log(this.todoListContent);
+  }
 }
+

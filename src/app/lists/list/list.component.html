@@ -1,0 +1,10 @@
+<li class="list-group-item" *ngFor="let todo of todoTexts; let i = index">
+    <span class="hover-cursor" (click)="onCheck(i)">
+        <i [class]="todo.todoCheck ? 'fa fa-check-circle-o checked' : 'fa fa-circle-o textsize'" ></i>
+    </span>
+    <span class="listtext">{{todo.todoText}}</span>
+    
+    <span class="hover-cursor text-danger pull-right" (click)="onRemove(i)">
+        <i class="fa fa-trash-o fa-lg textsize"></i>
+    </span>
+</li>
